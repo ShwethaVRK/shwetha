@@ -206,28 +206,15 @@
         <ul>
             <li>JavaScript</li>
             <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
             <li>AngularJs</li>
-            <li>React</li>
-            <li>Java</li>
+            <li>HTML</li>
+			<li>CSS</li>
+			<li>Java</li>
             <li>C</li>
             <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+            <li>PHP</li>
+			<li>C++</li>
+            <li>Android Studio</li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -235,8 +222,8 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/shwetha.v@st.niituniversity.in">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
+            <form method="POST" action="https://formspree.io/shwetha.v@st.niituniversity.in" onsubmit="window.open('about:blank','print_popup');">
+                <input type="hidden" name="_subject" value="Contact request from Portfolio Website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
@@ -285,6 +272,42 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+	
+	script>
+      function setBannerViewPort() {
+        document.querySelector('.vetti-scene').style.height = window.innerHeight + 'px'
+      }
+      function randomString(len, charSet) {
+          charSet = charSet || 'abcdefghijklmnopqrstuiwxyz&';
+          var randomString = '';
+          for (var i = 0; i < len; i++) {
+              var randomPoz = Math.floor(Math.random() * charSet.length);
+              randomString += charSet.substring(randomPoz,randomPoz+1);
+          }
+          return randomString;
+      }
+
+      function loading() {
+        var randomStr = randomString(7)
+        var randomStr1 = randomString(4)
+        var randomStr2 = randomString(34)
+        document.querySelector('.peru').innerText = randomStr + ' ' + randomStr1
+        document.querySelector('.seira-vela').innerText = randomStr2
+      }
+      setBannerViewPort()
+      var id = window.setInterval(loading, 200)
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
+    <script>
+       smoothScroll.init({
+         offset: 150,
+       });
+    </script>
+	
+	
+	
 </body>
 
 </html>
